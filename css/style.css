@@ -1,0 +1,16 @@
+@font-face {
+  font-family: Pufony;
+  src: url(../files/Pufony-1.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */
