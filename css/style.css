@@ -2,6 +2,15 @@
   font-family: Pufony;
   src: url(../files/Pufony-1.otf);
 }
+@font-face {
+  font-family: raleway_f;
+  src: url(../files/raleway-regular.woff2);
+}
+@font-face {
+  font-family: raleway_b;
+  src: url(../files/raleway-black.woff2);
+  font-weight: 900;
+}
 * {
   margin: 0;
   padding: 0;
@@ -9,8 +18,26 @@
 }
 
 body {
+  background-color: #010101;
+  color: #fff;
+  font-family: raleway_f, sans-serif;
+  line-height: 1.55;
+}
+
+.main-header {
+  position: relative;
+}
+.main-header .layers {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+}
+.main-header .layer {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
 }/*# sourceMappingURL=style.css.map */
