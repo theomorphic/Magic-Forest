@@ -40,4 +40,8 @@ body {
   position: absolute;
   background-size: cover;
   background-position: center;
+}
+
+.main-article {
+  min-height: 100vh;
 }/*# sourceMappingURL=style.css.map */
