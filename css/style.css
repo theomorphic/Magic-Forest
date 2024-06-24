@@ -17,6 +17,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --index: calc(1vw + 1vh);
+}
+
 body {
   background-color: #010101;
   color: #fff;
@@ -43,9 +47,30 @@ body {
   background-size: cover;
   background-position: center;
   will-change: transform;
+  z-index: 2;
+}
+.main-header .layers__header {
+  z-index: 1;
+  transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
+  text-transform: uppercase;
+  will-change: transform;
+  font-family: raleway_b;
+  font-weight: 900;
+  color: #e7e7e0;
+  text-shadow: 0 0 15px #9d822b;
+}
+.main-header .layers__header .layers__title {
+  font-size: calc(var(--index) * 2.5);
+  letter-spacing: calc(var(--index) / 2.25);
+}
+.main-header .layers__header .layers__caption {
+  font-size: calc(var(--index) / 1.175);
+  letter-spacing: calc(var(--index) / 3.5);
+  margin-top: calc(var(--index) * -1.75);
 }
 .main-header .layers__base {
   transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
+  z-index: 0;
 }
 .main-header .layers__middle {
   transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
