@@ -19,6 +19,7 @@
 
 :root {
   --index: calc(1vw + 1vh);
+  --color: #e7e7e0;
 }
 
 body {
@@ -56,7 +57,7 @@ body {
   will-change: transform;
   font-family: raleway_b;
   font-weight: 900;
-  color: #e7e7e0;
+  color: var(--color);
   text-shadow: 0 0 15px #9d822b;
 }
 .main-header .layers__header .layers__title {
@@ -94,4 +95,38 @@ body {
 
 .main-article {
   min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  color: var(--color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+.main-article__header {
+  text-transform: uppercase;
+  font-size: calc(var(--index) * 1.8);
+  letter-spacing: calc(var(--index) / 7.5);
+}
+
+.main-article__paragraph {
+  max-width: calc(var(--index) * 30);
+  font-size: calc(var(--index) * 0.9);
+  margin-top: calc(var(--index) / 1.25);
+}
+
+.copy {
+  position: absolute;
+  bottom: calc(var(--index) * 2.5);
+}
+.copy a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.65;
+  font-family: Pufony;
+  font-size: var(--index);
+  letter-spacing: calc(var(--index) / 20);
 }/*# sourceMappingURL=style.css.map */
