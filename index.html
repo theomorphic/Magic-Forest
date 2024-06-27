@@ -8,30 +8,38 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon//favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon//favicon-16x16.png">
+	
+	<script src="./js/gsap/gsap.min.js" defer></script>
+	<script src="./js/gsap/ScrollTrigger.min.js" defer></script>
+	<script src="./js/gsap/ScrollSmoother.min.js" defer></script>
+	
 	<script src="./js/main.js" defer></script>
 
 </head>
 <body>
-	<header class="main-header">
-		<div class="layers">
-			<div class="layers__header">
-				<div class="layers__caption">Welcome to Parallax</div>
-				<div class="layers__title">Magic Forest</div>
-			</div>
-
-			<div class="layer layers__base" style="background-image: url(./img/layer-base.webp);"></div>
-			<div class="layer layers__middle" style="background-image: url(./img/layer-middle.webp);"></div>
-			<div class="layer layers__front" style="background-image: url(./img/layer-front.webp);"></div>
+	<div class="wrapper">
+		<div class="content">
+			<header class="main-header">
+				<div class="layers">
+					<div class="layers__header">
+						<div class="layers__caption">Welcome to Parallax</div>
+						<div class="layers__title">Magic Forest</div>
+					</div>
+		
+					<div class="layer layers__base" style="background-image: url(./img/layer-base.webp);"></div>
+					<div class="layer layers__middle" style="background-image: url(./img/layer-middle.webp);"></div>
+					<div class="layer layers__front" style="background-image: url(./img/layer-front.webp);"></div>
+				</div>
+			</header>
+		
+			<article class="main-article" style="background-image: url(./img/dungeon.webp);">
+				<div class="main-article__content">
+					<h2 class="main-article__header">To be continued</h2>
+					<p class="main-article__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda voluptatibus doloremque repellat similique ea iure! Reprehenderit, adipisci. Cupiditate laborum ipsa nihil libero totam illo quis officiis nesciunt quod, perspiciatis nam, non nostrum.</p>
+				</div>
+				<div class="copy"><a href="https://github.com/theomorphic" target="_blank">© theomorphic</a></div>
+			</article>
 		</div>
-	</header>
-
-	<article class="main-article" style="background-image: url(./img/dungeon.webp);">
-		<div class="main-article__content">
-			<h2 class="main-article__header">To be continued</h2>
-			<p class="main-article__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda voluptatibus doloremque repellat similique ea iure! Reprehenderit, adipisci. Cupiditate laborum ipsa nihil libero totam illo quis officiis nesciunt quod, perspiciatis nam, non nostrum.</p>
-		</div>
-		<div class="copy"><a href="https://github.com/theomorphic" target="_blank">© theomorphic</a></div>
-	</article>
-
+	</div>
 </body>
 </html>
